@@ -1,4 +1,10 @@
 language: php
 php:
 - 5.6
-script: phpunit tests/
+
+before_script:
+- composer install --prefer-source
+
+script:
+- phpunit tests/
+- php public/Watashi.php
