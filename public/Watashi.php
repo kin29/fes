@@ -33,6 +33,9 @@ class Wahatashi
         $this->aoshima = new AoshimaBeachParkFes();
     }
 
+    /**
+     * @return void
+     */
     public function done()
     {
         $arrRet = array();
@@ -44,6 +47,10 @@ class Wahatashi
         var_dump($arrRet);
     }
 
+    /**
+     * @param string $class
+     * @return array $arrRet
+     */
     public function doneList($class)
     {
         $arrRet = array();
