@@ -1,0 +1,10 @@
+<phpunit bootstrap="./bootstrap.php">
+    <testsuites>
+        <testsuite name="FES">
+            <file>tests/CircleTest.php</file>
+            <file>tests/AoshimaBeachParkFesTesT.php</file>
+            <file>tests/MatsuriMIYAZAKITest.php</file>
+            <file>tests/WildBunchFesTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
