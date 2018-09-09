@@ -2,9 +2,22 @@
     <testsuites>
         <testsuite name="FES">
             <file>tests/CircleTest.php</file>
-            <file>tests/AoshimaBeachParkFesTesT.php</file>
+            <file>tests/AoshimaBeachParkFesTest.php</file>
             <file>tests/MatsuriMIYAZAKITest.php</file>
             <file>tests/WildBunchFesTest.php</file>
         </testsuite>
     </testsuites>
+
+    <logging>
+        <log type="coverage-html" target="build/coverage"/>
+        <log type="coverage-crap4j" target="build/logs/crap4j.xml"/>
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        <log type="junit" target="build/logs/junit.xml"/>
+    </logging>
+
+    <filter>
+        <whitelist>
+            <directory>./tests</directory>
+        </whitelist>
+    </filter>
 </phpunit>
